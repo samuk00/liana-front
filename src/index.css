@@ -1,0 +1,617 @@
+body {
+  margin: 0;
+  min-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+#navbar-container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s;
+
+}
+
+#navbar {
+  background-color: #32a834;
+  display: flex;
+  height: 50px;
+}
+
+#bars {
+  display: none;
+  margin-left: 0.5em;
+  width: 40px;
+}
+
+#bars-icon {
+  margin: auto;
+  font-size: 3rem;
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-items a {
+  margin: auto 0.5em;
+  color: white;
+}
+
+.nav-items select {
+  margin: auto 5em auto 0.5em;
+  padding-left: 0.5em;
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.nav-bottom {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+}
+
+.logo img {
+  margin: auto;
+}
+
+.nav-bottom-items {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.nav-bottom-items div {
+  display: flex;
+}
+
+.nav-bottom-items a {
+  margin: auto 1em;
+  color: #8f8f8f;
+}
+
+.nav-bottom-items a:hover {
+  color: #32a834;
+}
+
+.nav-bottom-items input {
+  margin: auto 0.5em;
+  padding-left: 0.5em;
+  height: 30px;
+  width: 150px;
+  border: #c4c4c4 1px solid;
+  border-radius: 5px;
+}
+
+.nav-bottom-items button {
+  margin: auto 5em auto 0.5em;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #32a834;
+  color: white;
+}
+
+.hero-container {
+  height: 600px;
+  width: 100%;
+}
+
+.hero-img {
+  text-align: center;
+  background-image: url("iso.png");
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-text {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  animation: show 5s linear;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-text button {
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #32a834;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.banners {
+  display: flex;
+  margin-top: 2em;
+  width: 85%;
+  justify-content: space-around;
+}
+
+.banner {
+  margin: 1em auto;
+  position: relative;
+  color: white;
+  height: 250px;
+  background-color: black;
+
+}
+
+.banner-img {
+  opacity: 0.5;
+  height: 250px;
+  width: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.banner-text a:hover {
+  color: #32a834;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.company-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  width: 50%;
+}
+
+.company-data {
+  display: flex;
+}
+
+.company-data img {
+  margin: auto;
+  width: 35px;
+  height: 35px;
+}
+
+.data {
+  margin-left: 2em;
+}
+
+.data p {
+  padding: 0;
+}
+
+.news-container {
+  text-align: center;
+  background-color: #e7e7e7
+}
+
+.news-container h1 {
+  padding-top: 1em;
+}
+
+.news {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+}
+
+.news-item {
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 3em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  width: 350px;
+  background-color: #fff;
+}
+
+.news-item p {
+  color: rgb(146, 145, 145);
+  padding: 0;
+}
+
+.reference-container {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.reference-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.references {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.reference-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.reference-item {
+  margin: 1em;
+  width: 80%;
+  border: #c4c4c4 solid 1px;
+}
+
+.reference-item img {
+  width: 100%;
+}
+
+.reference-text {
+  width: 100%;
+  border-top: #c4c4c4 solid 1px;
+  margin: 2em auto;
+}
+
+.reference-text h2, p {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-content {
+  border-top: #c4c4c4 1px solid;
+  width: 95%;
+  text-align: center;
+}
+
+.newsletter-input {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto 0em;
+}
+
+.newsletter-input input {
+  margin: auto 0.5em;
+  padding-left: 0.5em;
+  height: 30px;
+  width: 250px;
+  border: #c4c4c4 1px solid;
+  border-radius: 7px;
+}
+
+.newsletter-input button {
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #32a834;
+  color: white;
+}
+
+.notification {
+  height: 60px;
+}
+
+.footer-container {
+  background-color: black;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer-col {
+  margin-top: 5em;
+}
+
+.footer-contact {
+  display: flex;
+}
+
+.footer-contact p {
+  padding: 0;
+}
+
+.footer-contact button {
+  margin: auto 1em 1em;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: #32a834;
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links a {
+  margin: 1em 1em;
+  color: white;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.footer-icons a {
+  margin-right: 1em;
+  padding: 0.5em;
+  border-radius: 50px;
+  background-color: #32a834;
+}
+
+@media screen and (max-width: 1350px) {
+
+  .nav-bottom {
+    flex-direction: column;
+    height: 175px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-bottom-items {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #nav-bottom-links {
+    margin-top: 1em;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-bottom-search {
+    margin-top: 1em;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .banners {
+    flex-direction: column;
+  }
+
+  .banner {
+    height: auto;
+    width: 500px;
+  }
+
+  .banner-img {
+    height: 100%;
+    width: 500px;
+  }
+
+  .news {
+    flex-direction: column;
+  }
+
+  .news-item {
+    margin: auto;;
+  }
+
+  .company-numbers {
+    flex-direction: column;
+  }
+
+  .data {
+    width: 50%;
+  }
+
+  .references {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links a {
+    margin-bottom: 0em;
+  }
+
+  .footer-icons {
+    margin-top: 1em;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .logo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .logo img {
+    margin: auto;
+  }
+
+  #bars {
+    display: block;
+  }
+
+  .nav-items a, select {
+    display: none;
+  }
+
+  .nav-bottom {
+    height: 80px;
+  }
+
+  .nav-bottom a, button {
+    display: none;
+  }
+
+  .newsletter-input button{
+    display: block;
+    margin: 1em auto;
+  }
+
+  .news-item {
+    margin: auto;
+    width: 80%;
+  }
+
+  .hero-text button {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-bottom-search input {
+    display: none;
+  }
+
+  #navbar-container.responsive {
+      height: 100%;
+      background-color: white;
+  }
+
+  #navbar.responsive {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  #navbar.responsive a {
+    display: block;
+    margin-top: 1em;
+  }
+
+  #navbar.responsive select, input {
+    display: block;
+    margin: 1em auto;
+  }
+
+  #navbar.responsive div {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #nav-bottom-links.responsive {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav-bottom-links.responsive a {
+    display: block;
+    margin-top: 1em;
+  }
+
+   .banner {
+    height: auto;
+    width: 300px;
+  }
+
+  .banner-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .reference-row {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .reference-item {
+    margin: 1em auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-contact button {
+    margin: auto;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+}
+
+
+
+
+
+
+
